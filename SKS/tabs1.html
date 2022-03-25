@@ -1,0 +1,118 @@
+<!doctype html>
+<html>
+<head>
+<meta charset="utf-8">
+<title>無標題文件</title>
+<style type="text/css">
+/**
+ * Tabs
+ */
+.tabs {
+	display: flex;
+	flex-wrap: wrap; // make sure it wraps
+}
+.tabs label {
+	order: 1; // Put the labels first
+	display: block;
+	padding: 1rem 2rem;
+	margin-right: 0.2rem;
+	cursor: pointer;
+  background: #90CAF9;
+  font-weight: bold;
+  transition: background ease 0.2s;
+}
+.tabs .tab {
+  order: 99; // Put the tabs last
+  flex-grow: 1;
+	width: 100%;
+	display: none;
+  padding: 1rem;
+  background: #fff;
+}
+.tabs input[type="radio"] {
+	display: none;
+}
+.tabs input[type="radio"]:checked + label {
+	background: #fff;
+}
+.tabs input[type="radio"]:checked + label + .tab {
+	display: block;
+}
+
+@media (max-width: 45em) {
+  .tabs .tab,
+  .tabs label {
+    order: initial;
+  }
+  .tabs label {
+    width: 100%;
+    margin-right: 0;
+    margin-top: 0.2rem;
+  }
+}
+
+/**
+ * Generic Styling
+*/
+body {
+  background: #eee;
+  min-height: 100vh;
+	box-sizing: border-box;
+	padding-top: 10vh;
+  font-family: "HelveticaNeue-Light", "Helvetica Neue Light", "Helvetica Neue", Helvetica, Arial, "Lucida Grande", sans-serif; 
+  font-weight: 300;
+  line-height: 1.5;
+  max-width: 60rem;
+  margin: 0 auto;
+  font-size: 112%;
+}
+body {
+  background: #C8C8C8; /* fallback for old browsers */
+  background: -webkit-linear-gradient(right, #C8C8C8);
+  background: -moz-linear-gradient(right, #C8C8C8);
+  background: -o-linear-gradient(right, #C8C8C8);
+  background: linear-gradient(to left, #C8C8C8);
+  font-family: "Roboto", sans-serif;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;      
+}
+
+</style>
+</head>
+
+<body>
+<div class="tabs">
+  <input type="radio" name="tabs" id="tabone" checked="checked">
+  <label for="tabone">節目名稱管理系統</label>
+  <div class="tab">
+    <h1>節目名稱管理系統</h1>
+    <iframe src="program1.php" width="100%" height="200">
+	</iframe>
+  </div>
+  
+  <input type="radio" name="tabs" id="tabtwo">
+  <label for="tabtwo">主持人管理系統</label>
+  <div class="tab">
+    <h1>主持人管理系統</h1>
+    <iframe src="program2.php" width="100%" height="200">
+	</iframe>
+  </div>
+  
+  <input type="radio" name="tabs" id="tabthree">
+  <label for="tabthree">時間表管理系統</label>
+  <div class="tab">
+    <h1>時間表管理系統</h1>
+    <iframe src="program3.php" width="100%" height="200">
+	</iframe>
+  </div>
+  
+    <input type="radio" name="tabs" id="tabfour">
+  <label for="tabfour">非線性節目管理系統</label>
+  <div class="tab">
+    <h1>非線性節目管理系統</h1>
+    <iframe src="program4.php" width="100%" height="200">
+	</iframe>
+  </div>
+</div>
+</body>
+</html>

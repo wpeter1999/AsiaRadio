@@ -1,0 +1,310 @@
+<!doctype html>
+<html>
+<head>
+<meta charset="utf-8">
+<!-- fancy box !-->
+<meta http-equiv="Content-Type" content="text/html" />
+<meta http-equiv="imagetoolbar" content="no" />
+<!-- fancy box !-->
+<!--search button!-->
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+<!--search button!-->
+<title>風巢電台</title>
+<style type="text/css">
+<!-- fancy box !-->
+<script type="text/javascript" src="http://ajax.googleapis.com/ajax/libs/jquery/1.4/jquery.min.js"></script>
+	<script>
+		!window.jQuery && document.write('<script src="jquery-1.4.3.min.js"><\/script>');
+	</script>
+	<script type="text/javascript" src="./fancybox/jquery.mousewheel-3.0.4.pack.js"></script>
+	<script type="text/javascript" src="./fancybox/jquery.fancybox-1.3.4.pack.js"></script>
+	<link rel="stylesheet" type="text/css" href="./fancybox/jquery.fancybox-1.3.4.css" media="screen" />
+ 	<link rel="stylesheet" href="style.css" />
+	<script type="text/javascript">
+		$(document).ready(function() {
+						/*
+			*   Examples - various
+			*/
+
+			$(".various3").fancybox({
+				'width'				: '75%',
+				'height'			: '75%',
+				'autoScale'			: false,
+				'transitionIn'		: 'none',
+				'transitionOut'		: 'none',
+				'type'				: 'iframe'
+			});
+
+			$("#various4").fancybox({
+				'padding'			: 0,
+				'autoScale'			: false,
+				'transitionIn'		: 'none',
+				'transitionOut'		: 'none'
+			});
+		});
+	</script>
+<!-- fancy box !-->
+<style type="text/css">
+/* unvisited link */
+a:link {
+ 	text-decoration: none;
+	color: #000392;
+}
+
+/* visited link */
+a:visited {
+ 	text-decoration: none;
+	color: #000392;
+}
+
+/* mouse over link */
+a:hover {
+  	text-decoration: underline;
+	color: #000392;
+}
+
+/* selected link */
+a:active {
+  	text-decoration: none;
+	color: #000392;
+}
+/* image border */
+.img-frame-cap {
+        width: 110px;
+		height: 130px;
+        background:rgba(150,150,150,0.3);
+        padding: 2px 2px 2px 2px;
+		border-radius: 5px;
+        
+      }
+.caption {
+        text-align: center;
+        margin-top: 4px;
+		color: 	#000079;
+	    font-family: Microsoft JhengHei;
+	    font-size: 16px;
+ }
+ .captionText {
+	 	float:left;
+        text-align: center;
+        margin-top: -130px;
+		margin-left: 140px;
+       color: 	#000079;
+	    font-family: Microsoft JhengHei;
+	    font-size: 16px;
+		text-align:left;
+ }
+ div.imageborder {
+        border-radius: 999em;
+        width: 80px;
+        height: 80px;
+        padding: 5px;
+        line-height: 0;
+        border: 10px solid #000;
+        background-color: #eee;
+		
+      }
+div.imageborder>img {
+        border-radius: 999em;
+        height: 100%;
+        width: 100%;
+        margin: 0;
+		
+      }
+
+/* 對其LAYOUT */
+.container{
+	height: 1080px;
+	width:1920px;	
+	top:0px;
+	left: 0px;
+	right: 0px;
+	margin: auto;
+}
+.header{
+	position: absolute;
+	height: 150px;
+	width:1920px;
+	background-image:url("images/layout_01.png");
+	top:0px;
+	/*to center*/
+	left:0;
+	right:0;
+	margin: auto;
+}
+.headerRadio{
+	position: absolute;
+	top:35px;
+	left:400px;
+}
+.headerSearchbutton{
+	position: absolute;
+	left: 1000px;
+	top: 28px;
+}
+
+.logo{
+	position: absolute;
+    height: 90px;
+	width:90px;
+	top:10px;
+	left:15px;
+	
+	margin: auto;
+}
+
+.content{
+	position: absolute;	
+	height: 856px;
+	width:1920px;
+	background-color: antiquewhite;
+	top:150px;
+	left:0;
+	right:0;
+	margin: auto;
+}
+.left{
+	position: absolute;	
+    height: 856px;
+	width:648px;
+	background-image: url("images/layout_02.png");
+	left:0px;
+	top:0px;
+	
+}
+.leftheader{
+	position: absolute;
+	left: 35px;
+	top:45px;
+	width: 243px;
+	height: 39px;
+	background-image: ;
+}
+.leftText{
+	font-size: 18px;
+	padding-left:40px; 
+	padding-top:95px;
+	color: 	#000079;
+	font-family: Microsoft JhengHei;
+}
+.center{
+	position: absolute;	
+    height: 856px;
+	width:627px;
+	background-image: url("images/layout_03.png");
+	left:648px;
+	right:0;
+	top:0px;
+	
+}
+.centerheader{
+	position: absolute;
+	left: 45px;
+	top:45px;
+	width: 600px;
+	height: 39px;
+	background-image:;
+}
+
+.centerauthor{
+	position: absolute;
+	top: 50px;
+	height: 510px;
+	width:614px;
+	left:0;
+	right:0;
+	overflow: auto;
+	margin: auto;
+}
+.title{
+        color: 		#930093;
+	    font-family: Microsoft JhengHei;
+	    font-size: 16px;
+}
+.right{
+	position: absolute;	
+    height: 856px;
+	width:645px;
+	background-image: url("images/layout_04.png");
+	right:0px;
+	top:0px;
+	
+}
+.rightheader{
+	position: absolute;
+	left: 15px;
+	top:45px;
+	width: 243px;
+	height: 39px;
+	background-image:;
+}
+.rightheader1{
+	position: absolute;
+	left: 15px;
+	top:5px;
+	width: 243px;
+	height: 39px;
+	padding-left:82px; 
+	padding-top:5px;
+	color: white;
+}
+.rightText{
+	position: absolute;
+	top:50px;
+	height: 510px;
+	width:243px;
+	left:0;
+	right:0;
+	overflow: auto;
+	margin: auto;
+	font-size: 14px;
+	padding-left:0px; 
+	color: 	#000079;
+	font-family: Microsoft JhengHei;
+}
+.footer{
+	position: absolute;	
+    height:74px;
+	width:1920px;
+	background-image: url("images/layout_05.png");
+	top:1006px;
+	left:0;
+	right:0;
+	margin: auto;
+}
+
+
+
+</style>
+</head>
+
+<body>
+<div class="container">
+	<!--header start -->
+	<div class="header">
+	<div class="logo"><img src="images/logo.png" width="130" height="130" alt=""/></div>
+	</div>
+	<!--header end -->
+	<div class="content">
+	<!--left start -->
+		<div class="left">
+		</div>
+		<!--left end -->
+
+		<!--center start-->
+		<div class="center">
+		</div>
+		<!--center end-->
+
+		<!--right start -->
+		<div class="right">
+		</div>
+		<!--right end -->
+	</div>
+	<!--footer start -->
+	<div class="footer">
+	</div>
+	<!--footer end -->
+</div>
+</body>
+</html>

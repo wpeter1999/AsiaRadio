@@ -1,0 +1,27 @@
+<!doctype html>
+<html>
+<head>
+<meta http-equiv="Content-Type" charset="utf-8">
+<title>無標題文件</title>
+<script src="ckeditor/ckeditor.js"></script>
+</head>
+
+<body>
+<form id="form1" name="form1" method="post" action="second.php">
+	<p>
+	<textarea cols="80" id="editor1" name="editor1" rows="10"></textarea>
+		<script>
+		CKEDITOR.replace( 'editor1', {
+			height: 300,
+			width: 1200,
+		});
+		</script>
+	</p>
+
+	<input type="submit" value="送出">
+</form>
+<script>
+	initSample();
+</script>
+</body>
+</html>
